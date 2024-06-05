@@ -84,15 +84,6 @@ const ulElem = document.querySelector('.gallery');
 })()
 
 ulElem.addEventListener('click', onClick);
-ulElem.addEventListener('click', onClick);
-
-
-function onClick(evt) {
-  if (!evt.target.classList.contains('gallery-image')) {
-    return;
-  }
-  const currentImage = evt.target.closest('.gallery-item');
-}
 
 function onClick(evt) {
   evt.preventDefault();
@@ -111,3 +102,4 @@ function onClick(evt) {
       });
   }
 }
+
